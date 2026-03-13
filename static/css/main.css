@@ -386,3 +386,22 @@ body {
     grid-template-columns: 1fr;
   }
 }
+.journal-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.journal-card {
+  min-height: 200px;
+}
+
+.journal-content {
+  max-width: 900px;
+}
+
+@media (max-width: 900px) {
+  .journal-grid {
+    grid-template-columns: 1fr;
+  }
+}

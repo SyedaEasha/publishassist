@@ -1,0 +1,69 @@
+{{ define "main" }}
+<section class="section page-hero">
+  <div class="container">
+    <div class="section-heading page-hero-content">
+      <p class="section-label">Journal Publishing</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.description }}
+        <p class="page-lead">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container journal-grid">
+    <article class="card journal-card">
+      <h3>Scopus Journals</h3>
+      <p>
+        Support for authors preparing manuscripts intended for journals aligned
+        with Scopus indexing expectations.
+      </p>
+    </article>
+
+    <article class="card journal-card">
+      <h3>X Category Journals</h3>
+      <p>
+        Structured preparation support for manuscripts targeting recognized
+        academic journal categories.
+      </p>
+    </article>
+
+    <article class="card journal-card">
+      <h3>Y Category Journals</h3>
+      <p>
+        Assistance for authors preparing manuscripts for approved academic
+        journals with proper formatting and presentation.
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container journal-content">
+    <div class="card single-content">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-box services-cta-box">
+      <div>
+        <p class="section-label">Start Your Submission Preparation</p>
+        <h2>Need help preparing your manuscript?</h2>
+        <p>
+          Tell us about your research topic, target journal, and deadline, and
+          we will guide you through the preparation process.
+        </p>
+      </div>
+
+      <div class="hero-actions">
+        <a href="/contact/" class="btn">Contact Us</a>
+        <a href="/services/" class="btn btn-secondary">View Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
