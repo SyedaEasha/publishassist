@@ -1,16 +1,39 @@
 {{ define "main" }}
-<section class="section">
-  <div class="container single-page">
-    <div class="section-heading">
+<section class="section page-hero">
+  <div class="container">
+    <div class="section-heading page-hero-content">
       <p class="section-label">Service Details</p>
       <h1>{{ .Title }}</h1>
       {{ with .Params.description }}
-        <p>{{ . }}</p>
+        <p class="page-lead">{{ . }}</p>
       {{ end }}
     </div>
+  </div>
+</section>
 
+<section class="section">
+  <div class="container single-page">
     <div class="card single-content">
       {{ .Content }}
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="cta-box services-cta-box">
+      <div>
+        <p class="section-label">Need Help?</p>
+        <h2>Ready to discuss your academic requirements?</h2>
+        <p>
+          Contact us with your topic, deadline, and service needs, and we’ll guide you on the next step.
+        </p>
+      </div>
+
+      <div class="hero-actions">
+        <a href="/contact/" class="btn">Contact Us</a>
+        <a href="/services/" class="btn btn-secondary">Back to Services</a>
+      </div>
     </div>
   </div>
 </section>

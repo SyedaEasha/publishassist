@@ -95,6 +95,32 @@ body {
   margin: 1rem 0 0;
   padding-left: 1.2rem;
 }
+.single-page {
+  max-width: 900px;
+}
+
+.single-content {
+  padding: 2rem;
+}
+
+.single-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+  color: #0f172a;
+}
+
+.single-content p {
+  margin-bottom: 1rem;
+}
+
+.single-content ul {
+  padding-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.single-content li {
+  margin-bottom: 0.5rem;
+}
 
 .hero-actions {
   display: flex;
