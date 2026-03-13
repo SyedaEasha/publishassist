@@ -15,5 +15,18 @@
   </main>
 
   {{ partial "footer.html" . }}
+  
+  <script>
+    const navToggle = document.getElementById("navToggle");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    if (navToggle && mobileMenu) {
+      navToggle.addEventListener("click", () => {
+        mobileMenu.classList.toggle("open");
+        const expanded = navToggle.getAttribute("aria-expanded") === "true";
+        navToggle.setAttribute("aria-expanded", String(!expanded));
+      });
+    }
+  </script>
 </body>
 </html>
