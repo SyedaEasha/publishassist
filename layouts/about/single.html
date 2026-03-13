@@ -1,0 +1,50 @@
+{{ define "main" }}
+<section class="section page-hero">
+  <div class="container">
+    <div class="section-heading page-hero-content">
+      <p class="section-label">About Us</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.description }}
+        <p class="page-lead">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container about-grid">
+    <div class="card single-content">
+      {{ .Content }}
+    </div>
+
+    <div class="card about-side-card">
+      <h3>Why Clients Choose PublishAssist</h3>
+      <ul>
+        <li>Structured academic support</li>
+        <li>Clear and professional communication</li>
+        <li>Formatting and presentation guidance</li>
+        <li>Support for writing and publishing preparation</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="cta-box services-cta-box">
+      <div>
+        <p class="section-label">Let’s Work Together</p>
+        <h2>Need academic writing or publishing support?</h2>
+        <p>
+          Tell us about your requirements and we’ll guide you toward the right service.
+        </p>
+      </div>
+
+      <div class="hero-actions">
+        <a href="/contact/" class="btn">Contact Us</a>
+        <a href="/services/" class="btn btn-secondary">Explore Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
