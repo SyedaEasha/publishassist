@@ -1,0 +1,88 @@
+{{ define "main" }}
+<section class="section page-hero">
+  <div class="container">
+    <div class="section-heading page-hero-content">
+      <p class="section-label">Pricing</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Params.description }}
+        <p class="page-lead">{{ . }}</p>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="pricing-grid">
+      <article class="card pricing-card">
+        <span class="service-badge">Basic</span>
+        <h3>Essential Support</h3>
+        <p>Suitable for lighter editing, formatting, and document refinement needs.</p>
+        <ul>
+          <li>Basic editing support</li>
+          <li>Formatting adjustments</li>
+          <li>Short document assistance</li>
+        </ul>
+        <div class="pricing-card-action">
+          <a href="/contact/?package=basic" class="btn">Request Basic Quote</a>
+        </div>
+      </article>
+
+      <article class="card pricing-card featured-pricing">
+        <span class="service-badge">Popular</span>
+        <h3>Standard Support</h3>
+        <p>Ideal for structured academic support with moderate complexity and guidance needs.</p>
+        <ul>
+          <li>Writing or editing support</li>
+          <li>Formatting and refinement</li>
+          <li>Support for medium-length projects</li>
+        </ul>
+        <div class="pricing-card-action">
+          <a href="/contact/?package=standard" class="btn">Request Standard Quote</a>
+        </div>
+      </article>
+
+      <article class="card pricing-card">
+        <span class="service-badge">Advanced</span>
+        <h3>Comprehensive Support</h3>
+        <p>Best for more detailed academic work, publication preparation, or higher-complexity requirements.</p>
+        <ul>
+          <li>In-depth support scope</li>
+          <li>Publication-oriented preparation</li>
+          <li>Extended or advanced projects</li>
+        </ul>
+        <div class="pricing-card-action">
+          <a href="/contact/?package=advanced" class="btn">Request Advanced Quote</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container pricing-content-wrap">
+    <div class="card single-content">
+      {{ .Content }}
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-box services-cta-box">
+      <div>
+        <p class="section-label">Request a Quote</p>
+        <h2>Need a custom price based on your project?</h2>
+        <p>
+          Contact us with your service type, topic, deadline, and requirements to get a tailored quote.
+        </p>
+      </div>
+
+      <div class="hero-actions">
+        <a href="/contact/" class="btn">Get a Quote</a>
+        <a href="/services/" class="btn btn-secondary">View Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
