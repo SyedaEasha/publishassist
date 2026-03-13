@@ -206,3 +206,96 @@ body {
   }
 }
 
+.single-page {
+  max-width: 900px;
+}
+
+.single-content h2,
+.single-content h3,
+.single-content h4,
+.single-content h5,
+.single-content h6,
+.single-content ul,
+.single-content ol,
+.single-content p {
+  margin-bottom: 1rem;
+}
+
+.single-content ul,
+.single-content ol {
+  padding-left: 1.2rem;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.text-link {
+  color: #2563eb;
+  font-weight: bold;
+}
+.page-hero {
+  background: linear-gradient(135deg, #eff6ff, #f8fafc);
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+}
+
+.page-hero-content {
+  max-width: 760px;
+}
+
+.page-lead {
+  font-size: 1.08rem;
+  color: #475569;
+}
+
+.services-grid {
+  margin-top: 1rem;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 250px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.service-card-top h3 {
+  margin-top: 0.7rem;
+  margin-bottom: 0.8rem;
+}
+
+.service-card h3 a {
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.service-card h3 a:hover {
+  color: #2563eb;
+}
+
+.service-badge {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1d4ed8;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+}
+
+.service-card-footer {
+  margin-top: 1.2rem;
+}
+
+.services-cta-box {
+  background: #ffffff;
+  color: #1f2937;
+  border: 1px solid #e5e7eb;
+}
