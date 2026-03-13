@@ -555,3 +555,51 @@ button.btn {
     font-size: 1.2rem;
   }
 }
+.blog-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.blog-card {
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.blog-card h3 a {
+  text-decoration: none;
+  color: #0f172a;
+}
+
+.blog-card h3 a:hover {
+  color: #2563eb;
+}
+
+.blog-meta {
+  font-size: 0.9rem;
+  color: #64748b;
+  margin-bottom: 0.8rem;
+}
+
+.blog-card-footer {
+  margin-top: 1.2rem;
+}
+
+.blog-single {
+  padding: 2rem;
+}
+
+.blog-single h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.blog-single p {
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 900px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}
